@@ -15,7 +15,8 @@ from sklearn.metrics import classification_report, accuracy_score, confusion_mat
 import seaborn as sns
 from transformers import BertTokenizer
 from transformers import TFBertForSequenceClassification
-
+nltk.download('punkt')
+nltk.download('stopwords')
 
 df = pd.read_csv("dataset_tweet_sentiment_pilkada_DKI_2017.csv")
 
